@@ -67,6 +67,10 @@ namespace SporArt.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemDTO>> GetItem(int id)
         {
+
+
+
+
           if (_context.Itens == null)
           {
               return NotFound();
