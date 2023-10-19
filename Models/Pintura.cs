@@ -10,6 +10,6 @@
 
         public int AutorId { get; set; }
 
-        public string Comentario { get; set; }
+        public string Comentario  { get; set; }
     }
 }
