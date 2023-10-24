@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SporArt", "SporArt.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotClass", "..\SpotClass\SpotClass.csproj", "{8CB16FD8-0130-438F-820C-2F7F9781E6BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotArtBlazor", "..\SpotArtBlazor\SpotArtBlazor.csproj", "{F17F8154-3684-4972-BBF3-6F77E94116E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8CB16FD8-0130-438F-820C-2F7F9781E6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB16FD8-0130-438F-820C-2F7F9781E6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB16FD8-0130-438F-820C-2F7F9781E6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17F8154-3684-4972-BBF3-6F77E94116E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17F8154-3684-4972-BBF3-6F77E94116E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17F8154-3684-4972-BBF3-6F77E94116E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17F8154-3684-4972-BBF3-6F77E94116E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

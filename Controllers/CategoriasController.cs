@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SporArt.Data;
-using SporArt.Models;
+using SpotClass;
 
 namespace SporArt.Controllers
 {

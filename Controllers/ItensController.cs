@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SporArt.Data;
-using SporArt.Models;
 using SporArt.Models.DTOs;
+using SpotClass;
 
 namespace SporArt.Controllers
 {
@@ -31,8 +31,15 @@ namespace SporArt.Controllers
               return NotFound();
           }
             return await _context.Itens.ToListAsync();
+            var item = await _context.Itens.Include(i => i.Categoria).FirstOrDefaultAsync(i => i.Id == id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
 
 
+            return item;
 
         }
         [HttpGet("porcategoria/{categoriaId")]

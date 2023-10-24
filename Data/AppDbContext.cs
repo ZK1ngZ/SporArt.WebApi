@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SporArt.Models;
+using SpotClass;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace SporArt.Data
 {
