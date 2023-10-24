@@ -30,32 +30,27 @@ namespace SporArt.Controllers
           {
               return NotFound();
           }
+          
+
+
+
             return await _context.Itens.ToListAsync();
-            var item = await _context.Itens.Include(i => i.Categoria).FirstOrDefaultAsync(i => i.Id == id);
-
-            if (item == null)
-            {
-                return NotFound();
-            }
-
-
-            return item;
 
         }
-        [HttpGet("porcategoria/{categoriaId")]
+        [HttpGet("porcategoria/{categoriaId}")]
         public async Task<ActionResult<IEnumerable<ItemDTO>>>GetItemPorCategoria(int categoriaId)
         {
             var listaItens = await _context.Itens.Include(i => i.Categoria).Where(i => i.Categoria.Id == categoriaId).ToListAsync();
             var listaItensDto = new List<ItemDTO>();
 
-            foreach (var item in listaItensDto)
+            foreach (var item in listaItens)
             {
                 var itemDTO = new ItemDTO
                 {
                     Id = item.Id,
                     Cor = item.Cor,
                     Formato = item.Formato,
-                    NomeCategoria = item.NomeCategoria 
+                    NomeCategoria = item.Categoria.Nome
                 };
                 listaItensDto.Add(itemDTO);
             }

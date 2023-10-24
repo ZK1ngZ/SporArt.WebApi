@@ -14,7 +14,7 @@ namespace SporArt.Data
 
         }
 
-        [Required]
+        
         public DbSet<Usuario> Usuarios { get; set; }
        
 
