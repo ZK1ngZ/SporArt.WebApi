@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SporArt.Data;
-using SporArt.Models;
 using SporArt.Models.DTOs;
+using SpotClass;
 
 namespace SporArt.Controllers
 {
@@ -30,25 +30,27 @@ namespace SporArt.Controllers
           {
               return NotFound();
           }
+          
+
+
+
             return await _context.Itens.ToListAsync();
 
-
-
         }
-        [HttpGet("porcategoria/{categoriaId")]
+        [HttpGet("porcategoria/{categoriaId}")]
         public async Task<ActionResult<IEnumerable<ItemDTO>>>GetItemPorCategoria(int categoriaId)
         {
             var listaItens = await _context.Itens.Include(i => i.Categoria).Where(i => i.Categoria.Id == categoriaId).ToListAsync();
             var listaItensDto = new List<ItemDTO>();
 
-            foreach (var item in listaItensDto)
+            foreach (var item in listaItens)
             {
                 var itemDTO = new ItemDTO
                 {
                     Id = item.Id,
                     Cor = item.Cor,
                     Formato = item.Formato,
-                    NomeCategoria = item.NomeCategoria 
+                    NomeCategoria = item.Categoria.Nome
                 };
                 listaItensDto.Add(itemDTO);
             }

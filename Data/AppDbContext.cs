@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SporArt.Models;
+using SpotClass;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace SporArt.Data
 {
@@ -12,7 +14,7 @@ namespace SporArt.Data
 
         }
 
-        [Required]
+        
         public DbSet<Usuario> Usuarios { get; set; }
        
 
