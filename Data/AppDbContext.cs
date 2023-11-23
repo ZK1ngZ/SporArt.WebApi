@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SporArt.Models;
+
 using SpotClass;
 using System.ComponentModel.DataAnnotations;
 
@@ -14,9 +15,9 @@ namespace SporArt.Data
 
         }
 
-        
+
         public DbSet<Usuario> Usuarios { get; set; }
-       
+
 
         public DbSet<Mensagem> Mensagens { get; set; }
 
@@ -30,5 +31,32 @@ namespace SporArt.Data
 
         public DbSet<Musica> Musicas { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Usuario>()
+                .HasData(
+                    new Usuario
+                    {
+                        Id = 1,
+                        Nome = "Senai ADMIN",
+                        Email = "senaiadm@gmail.com",
+                        Senha = "Senai321",
+                        Role = "Admin"
+                    },
+                    new Usuario
+                    {
+                        Id = 2,
+                        Nome = "Senai Aluno",
+                        Email = "senaialuno@gmail.com",
+                        Senha = "Senai123",
+                        Role = "Aluno"
+                    }
+                );
+
+
+        }
     }
 }
