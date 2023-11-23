@@ -51,6 +51,7 @@ namespace SporArt.Controllers
                     Cor = item.Cor,
                     Formato = item.Formato,
                     NomeCategoria = item.Categoria.Nome
+                    
                 };
                 listaItensDto.Add(itemDTO);
             }
