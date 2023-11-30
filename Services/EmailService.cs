@@ -29,7 +29,7 @@ namespace SporArt.Services
 
             var smtpHost = "smtp.gmail.com";
             var smtpPort = 465;
-            var usuario = "brunotavaresguimaraes2@gmail.com";
+            var usuario = "brunotavares@aluno.senai.br";
             var password = "senha";
 
             var smtp = new MailKit.Net.Smtp.SmtpClient();

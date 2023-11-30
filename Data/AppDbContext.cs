@@ -44,7 +44,7 @@ namespace SporArt.Data
                         Nome = "Senai ADMIN",
                         Email = "senaiadm@gmail.com",
                         Senha = "Senai321",
-                        Role = "Admin"
+                      
                     },
                     new Usuario
                     {
@@ -52,7 +52,7 @@ namespace SporArt.Data
                         Nome = "Senai Aluno",
                         Email = "senaialuno@gmail.com",
                         Senha = "Senai123",
-                        Role = "Aluno"
+                     
                     }
                 );
 

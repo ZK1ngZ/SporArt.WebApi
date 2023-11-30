@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace SporArt.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AutController : ControllerBase
+    public class AutController : Controller
     {
+    
     }
 }
