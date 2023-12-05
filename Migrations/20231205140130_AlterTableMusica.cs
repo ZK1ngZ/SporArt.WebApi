@@ -5,7 +5,7 @@
 namespace SporArt.Migrations
 {
     /// <inheritdoc />
-    public partial class AlterTablePintura : Migration
+    public partial class AlterTableMusica : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

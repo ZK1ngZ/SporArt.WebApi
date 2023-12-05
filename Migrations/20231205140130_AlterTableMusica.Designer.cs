@@ -11,8 +11,8 @@ using SporArt.Data;
 namespace SporArt.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231205122849_AlterTablePintura")]
-    partial class AlterTablePintura
+    [Migration("20231205140130_AlterTableMusica")]
+    partial class AlterTableMusica
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

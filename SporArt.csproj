@@ -31,8 +31,4 @@
     <ProjectReference Include="..\SpotClass\SpotClass.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="uploads\itens\" />
-  </ItemGroup>
-
 </Project>

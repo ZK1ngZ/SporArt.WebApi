@@ -35,7 +35,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias", (string)null);
+                    b.ToTable("Categorias");
                 });
 
             modelBuilder.Entity("SpotClass.Foto", b =>
@@ -62,7 +62,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Fotos", (string)null);
+                    b.ToTable("Fotos");
                 });
 
             modelBuilder.Entity("SpotClass.Item", b =>
@@ -91,7 +91,7 @@ namespace SporArt.Migrations
 
                     b.HasIndex("CategoriaId");
 
-                    b.ToTable("Itens", (string)null);
+                    b.ToTable("Itens");
                 });
 
             modelBuilder.Entity("SpotClass.Mensagem", b =>
@@ -114,7 +114,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Mensagens", (string)null);
+                    b.ToTable("Mensagens");
                 });
 
             modelBuilder.Entity("SpotClass.Musica", b =>
@@ -145,7 +145,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Musicas", (string)null);
+                    b.ToTable("Musicas");
                 });
 
             modelBuilder.Entity("SpotClass.Pintura", b =>
@@ -172,7 +172,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pinturas", (string)null);
+                    b.ToTable("Pinturas");
                 });
 
             modelBuilder.Entity("SpotClass.Usuario", b =>
@@ -203,7 +203,7 @@ namespace SporArt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
 
                     b.HasData(
                         new
