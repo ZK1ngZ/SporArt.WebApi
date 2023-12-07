@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SporArt", "SporArt.csproj",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotClass", "..\SpotClass\SpotClass.csproj", "{8CB16FD8-0130-438F-820C-2F7F9781E6BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotArtsGallery.client", "..\SpotArtsGallery.client\SpotArtsGallery.client.csproj", "{2296D6A0-1CBE-4C4A-8A28-A35A094BBD4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotArtsGallery.client", "..\SpotArtsGallery.client\SpotArtsGallery.client.csproj", "{2296D6A0-1CBE-4C4A-8A28-A35A094BBD4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Js", "Js", "{74DD72BD-12E8-4410-9429-5257738371C3}"
 	ProjectSection(SolutionItems) = preProject
